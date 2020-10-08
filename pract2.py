@@ -36,3 +36,60 @@ myLappyList[1] = "Lenovo"
 lappy = tuple(myLappyList)
 
 print(lappy)
+
+for x in lappy:
+	print(x)
+
+
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[:4])
+print(thislist[2:])
+
+print(len(thislist[2:]))
+
+if "kiwi" in thislist:
+  print("Yes, 'kiwi' is in the fruits list")
+
+
+thislist.insert(5, "papaya")
+print(thislist)
+
+
+print("~~~~~~~~~~~~~~~~~~")
+
+#dictionary example
+
+
+myCar =  {
+  "brand": "Hindustan Motors",
+  "model": "Contessa",
+  "year": 1984
+}
+print(myCar)
+
+myCarModel = myCar["model"]
+print("model : " + myCarModel )
+print("model : " + myCar["model"])
+print("model : " + myCar.get("model"))
+
+print("~~~~~~~~~~~~~~~~~~")
+
+myCar["model"] = "Hinustan Contessa"
+
+print("model : " + myCar["model"] )
+print(myCar)
+
+
+for x, y in myCar.items():
+  print(x, y)
+
+
+if "Hinustan Contessa" in myCar.values():
+  print("Yes, \'"+ myCar["model"]+"\' model is available")
+
+myCar["color"] = "red"
+print(myCar)
+
+for x, y in myCar.items():
+  print(x, y)

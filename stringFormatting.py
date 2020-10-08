@@ -23,3 +23,6 @@ age = 31
 name = "Raj"
 details = "My name is {1}. I am {0} years old."
 print(details.format(age, name))
+
+myVehicle = "I have a {carname}, it is a {model}."
+print(myorder.format(carname = "Hindustan", model = "Contessa"))
